@@ -1,0 +1,303 @@
+/******* PLANTILLA CSS ******/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+ 
+}
+main {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+a,
+p {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 4em;
+  color: #fff;
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 3em;
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 2em;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4em;
+}
+
+li {
+  list-style-type: none;
+}
+a {
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 300ms;
+}
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+  outline-offset: 0;
+}
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+video {
+  max-width: 100%;
+}
+/**********HEADER**********/
+header{
+    display:flex; 
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom:.5rem;
+}
+header .header-today-news{
+    display:flex;
+    justify-content: space-around;
+}
+.header-links{
+    background-color: #fff;
+    padding:.3rem;
+}
+.header-locations ul{
+    color:black;
+    display:flex;
+    gap:.3rem;
+    justify-content: end;
+   
+}
+.header-locations ul li::after{
+    content:' /';
+}
+.header-links ul{
+    display:flex;
+    padding:0 20%;
+    gap:.3rem;
+}
+.header-links ul li::after{
+    content:'-';
+}
+.header-links ul li{
+    color:black;
+    font-size:0.6rem;    
+}
+.header-links ul li span{
+    color:#cd0000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header-menu{
+    display:flex;
+    justify-content: space-around;
+    padding:.5rem 20%;
+    background-color: #cd0000;
+    align-items:center;
+    margin-bottom:.2rem;
+    
+}
+header .toggle-menu{
+
+}
+header .logo{
+    width:30%;
+}
+header .header-menu .header-menu-buttons{
+    display:flex;
+    gap:.5rem;
+    justify-content: flex-end;
+}
+header .header-menu .nav-login-button button{
+    background-color:#f8f9fa;
+    border:1px solid black;
+    border-radius:5px;
+    padding:.4rem .4rem;
+} 
+header .header-menu .nav-signin-button button{
+    background-color: #ffc700;
+    border:1px solid black;
+    border-radius:5px;
+    padding:.4rem .4rem;
+}
+/***NAV HEADER MENU***/
+.nav-menu{
+    background-color:#e6e6e6;
+    padding:.1rem;
+    border-bottom:solid 2px #ccc;
+}
+.nav-menu ul{
+    display:flex;
+    gap:1.6rem;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto","Helvetica Neue";
+    font-size:0.8rem;
+    text-transform: uppercase;
+}
+.nav-menu ul .home-icon a li svg{
+    width:1.4rem;
+    height:1.4rem;
+}
+.nav-menu ul .search-icon a li svg{
+    width:1rem;
+    height:1rem;
+}
+/*******MAIN NEW******/
+main{
+   
+}
+.main-new{
+    display:flex;
+    flex-direction: column;
+    padding-left:20%;
+    padding-right:40%;
+}
+.main-new .main-new-image{
+    margin-bottom: .5rem;
+}
+.main-new .main-new-content{
+
+}
+.main-new .main-new-content .main-new-football{
+    display:flex;
+    background-color: rgb(210, 203, 203);
+    gap:1rem;
+    justify-content: space-between;
+    margin-bottom:.5rem;
+}
+.main-new .main-new-content .main-new-football .main-new-football-team{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    width:50%;
+    justify-content: space-between;
+}
+.main-new .main-new-content .main-new-football .main-new-football-team .main-new-result{
+    background-color: red;
+    height:80%;
+    padding:0.4rem 0.3rem;
+}
+.main-new .main-new-content .main-new-football .main-new-football-team .main-new-result p{
+    font-size: 1rem;
+}
+.main-new .main-new-content .main-new-football .main-new-football-team .main-new-text p{
+    font-size:1rem;
+}
+.main-new .main-new-content .main-new-links{
+    margin-bottom:1rem;
+}
+.main-new .main-new-content .main-new-links ul{
+    display:flex;
+    justify-content: center;
+    gap:.5rem;
+}
+.main-new-content .main-new-title a{
+    color:green;
+}
+.main-new-content .main-new-subtitle h2{
+    font-size:1.7rem;
+}
+.main-new-content .main-new-description p{
+    font-size: 1rem;
+    margin-bottom:.5rem;
+}
+.main-new-content .main-new-author p{
+    font-size: .8rem;
+    font-weight: bold;
+}
+/****FEATURED NEWS*****/
+.featured-news{
+    display:flex;
+    gap: 1rem;
+    padding-left:20%;
+    padding-right:40%;
+    margin-bottom:1.5rem;
+}
+.featured-news .featured-item{
+    width:50%;
+}
+.featured-item-link a{
+    color:red;
+}
+.featured-item-title h3{
+    font-size:1.2rem;
+}
+.featured-item-description{
+    margin-bottom:.5rem;
+}
+.featured-item-description p{
+    font-size:.8rem;
+}
+.featured-item-author p{
+    font-size:0.8rem;
+    font-weight: bold;
+    color:grey;
+}
+/***************NEWS***************/
+.news{
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+   
+    width:100%;
+    padding:0 20%;
+}
+.news-title h2{
+    font-size:1.2rem;
+    text-transform: uppercase;
+}
+.divider{
+    width:100%;
+    height:4px;
+    background-color: #cd0000;
+    margin-bottom:1rem;
+}
+.news .news-container{
+    display:flex;
+    gap:1.5rem;
+}
+.news .news-container .news-item{
+    width:33%;
+}
+.news .news-container .news-item .news-item-subtitle p{
+    text-transform: uppercase;
+    font-size:.7rem;
+    font-weight: bold;
+    color:grey;
+}
+.news .news-container .news-item .news-item-title{
+    margin-bottom:.5rem;
+}
+.news .news-container .news-item .news-item-title h4{
+    font-size:1.2rem;
+    
+}
+.news .news-container .news-item .news-item-author p{
+    font-size:.7rem;
+    color:grey;
+}
